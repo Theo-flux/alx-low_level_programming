@@ -1,0 +1,4 @@
+#!/bin/bash
+STR=echo $CFILE | cut -d . -f1
+UOTPUT= "$STR.O"
+gcc -c $CFILE $OUTPUT
