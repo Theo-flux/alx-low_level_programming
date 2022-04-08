@@ -3,8 +3,10 @@
 #include <time.h>
 /* more headers goes there */
 /* betty style doc for function main goes there */
-/**
- * main - Entry point                                       *                                                          * Return: Always 0 (Success)                               */
+/*
+ * main function
+ * return 1 always (Success)
+ */
 int main(void)
 {
 int n;
