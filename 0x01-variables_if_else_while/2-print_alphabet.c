@@ -1,4 +1,8 @@
+
 #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+#include <stdlib.h>
 /**
  * main - main block
  * Description:  prints the alphabet in lowercase,
@@ -7,12 +11,12 @@
  */
 int main(void)
 {
-char c = 'a';
-while (c <= 'Z')
+char *str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+size_t i;
+for (i = 0; i < strlen(str); ++i)
 {
-putchar(c);
-c++;
+putchar("%c", tolower((unsigned char) str[i]));
 }
-putchar('\n');
+putchar("\n");
 return (0);
 }
