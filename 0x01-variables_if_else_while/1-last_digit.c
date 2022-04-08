@@ -4,7 +4,8 @@
 /* more headers goes there */
 /* betty style doc for function main goes there */
 /*
- * main function
+ * man -  main function
+ * Description: task 2
  * return 1 always (Success)
  */
 int main(void)
