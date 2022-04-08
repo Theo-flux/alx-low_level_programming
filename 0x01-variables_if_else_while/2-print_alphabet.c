@@ -1,5 +1,5 @@
+
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 /**
  * main - main block
@@ -8,15 +8,13 @@
  */
 int main(void)
 {
-char str[25];
-int i;
-str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
-for (i =0; i <= strlen(str); i++){
-if (str[i] i 7 >=65 && str[i] <= 97)
+char c = 'a';
+while (c <= 'z')
 {
-str[i]=str[i]+32;
-putchar("%s", str[i]);
+putchar(c);
+c++;
 }
-putchar("\n");
+putchar('\n');
 return (0);
+}
 }
