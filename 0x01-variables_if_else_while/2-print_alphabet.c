@@ -1,25 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <ctype.h>
-#include <string.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
-/*
- * main function
- * return 0 always (Success)
+/**
+ * main - main block
+ * Description:  prints the alphabet in lowercase,
+ * and then in uppercase, followed by a new line.
+ * Return: 0
  */
 int main(void)
 {
-int n;
-char str;
-str = "abcdefghijklmnopqrstuvwxyz";
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-for (int i = 0; i < strlen(str); i++)
+char c = 'a';
+while (c <= 'z')
 {
-putchar("%c", tolower((unsigned char) str[i]));
+putchar(c);
+c++;
 }
-putchar("\n");
-return (0);	
+c = 'A';
+while (c <= 'Z')
+{
+putchar(c);
+c++;
+}
+putchar('\n');
+return (0);
 }
