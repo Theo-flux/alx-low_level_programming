@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - function
- *
+ * @c: character to check case sensitiviy
  * Return: Always 0.
  */
 int _islower(int c)
