@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * main - Entry function
- * Description: prints the alphabet, in lowercase, followed by a new line
+ * print_alphabet - Entry function
  * Return: Always 0.
  */
 void print_alphabet(void)
