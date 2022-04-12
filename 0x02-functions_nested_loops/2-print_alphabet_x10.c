@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet_10x - Entry code
+ * print_alphabet_x10 - Entry code
  * Return: Always 0.
  */
 void print_alphabet_x10(void)
