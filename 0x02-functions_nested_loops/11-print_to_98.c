@@ -77,20 +77,23 @@ _putchar(' ');
 }
 _putchar('\n');
 }
-else
+else if (n > 99)
 {
 for (i = n; i < 99; --i)
 {
+_putchar('0' + i / 100);
 if (i > 99)
 {
-int j,m,k,h;
-j = i / 10;
-m = j / 10;
-k = j % 10;
-h = i % 10;
-_putchar('0' + m);
-_putchar('0' + k);
-_putchar('0' + h);
+if (i / 100 > 9)
+{
+int r;
+r = i / 100;
+_putchar('0' + r % 10);
+}
+else
+{
+_putchar('0' + 0);
+}
 _putchar(',');
 _putchar(' ');
 }
