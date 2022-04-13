@@ -26,7 +26,7 @@ else
 _putchar('0' + row / 10);
 _putchar('0' + row % 10);
 }
-if(j < 9)
+if (j < 9)
 {
 _putchar(',');
 _putchar(' ');
