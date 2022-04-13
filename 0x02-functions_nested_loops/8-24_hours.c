@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * jack_bauer - Entry function
  * Return: Always 0.
@@ -13,16 +12,16 @@ for (m = 0; m < 60; ++m)
 {
 if (i < 10)
 {
-printf("0");
+_putchar('0');
 }
-printf("%d", i);
+_putchar('0' + i);
 printf(":");
 if (m < 10)
 {
-printf("0");
+_putchar('0');
 }
-printf("%d", m);
-printf("\n");
+_putchar('0' + m);
+_putchar('\n');
 }
 m = 0;
 }
