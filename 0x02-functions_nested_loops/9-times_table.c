@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * times_table - Entry function
  * Return: value
@@ -12,23 +11,28 @@ for (i = 0; i < num + 1; ++i)
 {
 for (j = 0; j < num + 1; ++j)
 {
-row = i*j;
-if (j == 9)
+row = i * j;
+if (j == 0)
 {
-printf("%d", row);
+_putchar('0' + row);
+}
+else if (row < 10)
+{
+_putchar(' ');
+_putchar('0' + row);
 }
 else
 {
-if (row < 10)
+_putchar('0' + row / 10);
+_putchar('0' + row % 10);
+}
+if(j < 9)
 {
-printf("%d,  ", row);
-}
-else
-{
-printf("%d, ", row);
+_putchar(',');
+_putchar(' ');
 }
 }
+_putchar('\n');
 }
-printf("\n");
 }
-}
+
