@@ -15,7 +15,7 @@ if (i < 10)
 _putchar('0');
 }
 _putchar('0' + i);
-printf(":");
+_putchar(':');
 if (m < 10)
 {
 _putchar('0');
