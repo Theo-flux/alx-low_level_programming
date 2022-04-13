@@ -13,14 +13,24 @@ for (m = 0; m < 60; ++m)
 if (i < 10)
 {
 _putchar('0');
-}
 _putchar('0' + i);
+}
+else
+{
+_putchar('0' + i / 10);
+_putchar('0' + i % 10);
+}
 _putchar(':');
 if (m < 10)
 {
 _putchar('0');
-}
 _putchar('0' + m);
+}
+else
+{
+_putchar('0' + m / 10);
+_putchar('0' + m % 10);
+}
 _putchar('\n');
 }
 m = 0;
