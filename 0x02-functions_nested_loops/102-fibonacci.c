@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: program that prints the first 50 Fibonacci numbers, 
+ * Description: program that prints the first 50 Fibonacci numbers,
  * starting with 1 and 2, followed by a new line.
  * Return: 0
  */
@@ -18,7 +18,7 @@ printf("%lu", next);
 if (i < 49)
 {
 printf(", ");
-}		
+}
 i++;
 }
 putchar('\n');
