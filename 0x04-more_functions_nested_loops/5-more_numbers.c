@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * more_numbers - Entry function
- * Return: void.
+ * Return: 0.
  */
 void more_numbers(void)
 {
