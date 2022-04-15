@@ -1,27 +1,25 @@
 #include "main.h"
 /**
- * more_numbers - Entry function
- * Return:void.
+ * more_numbers - prints more numbers
+ * Return:void
  */
 void more_numbers(void)
 {
+char n, c;
 int i = 0;
-int j;
-while (i < 11)
+while (i < 10)
 {
-for (j = 0; j < 15; ++j)
+for (n = 0; n <= 14; n++)
 {
-if (j > 9)
+c = n;
+if (n > 9)
 {
-_putchar('0' + j / 10);
-_putchar('0' + j % 10);
+_putchar('1');
+c = n % 10;
 }
-else
-{
-_putchar('0' + j);
-}
+_putchar('0' + c);
 }
 _putchar('\n');
-++i;
+i++;
 }
 }
