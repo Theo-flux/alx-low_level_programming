@@ -1,21 +1,18 @@
 #include "main.h"
 /**
- * print_mmost_numbers - Entry function
- * Return: void.
+ * print_most_numbers - prints numbers
+ * Return:0
  */
 void print_most_numbers(void)
 {
-int i;
-for (i = 0; i < 10; ++i)
+char n = 0;
+while (n <= 9)
 {
-if (i == 2 || i == 4)
+if (n != 2 && n != 4)
 {
-continue;
+_putchar('0' + n);
 }
-else
-{
-_putchar('0' + i);
-}
+n++;
 }
 _putchar('\n');
 }
