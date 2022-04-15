@@ -2,7 +2,7 @@
 /**
  * _isupper - Entry function
  * @c: integer
- * Result: Always 0 or 1
+ * Return: Always 0 or 1
  */
 int _isupper(int c)
 {
