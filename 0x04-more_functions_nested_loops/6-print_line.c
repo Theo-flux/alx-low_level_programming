@@ -2,7 +2,7 @@
 /**
  * print_line - Enty function
  * @n: int number type
- * Return - void
+ * Return:void
  */
 void print_line(int n)
 {
