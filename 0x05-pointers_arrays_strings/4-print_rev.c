@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <string.h>
 /**
  * print_rev - Entry function
@@ -16,6 +15,7 @@ for (i = 0; i < length; ++i)
 {
 rev[i] = s[j];
 j--;
+_putchar(rev[i]);
 }
-puts(rev);
+_putchar('\n');
 }
