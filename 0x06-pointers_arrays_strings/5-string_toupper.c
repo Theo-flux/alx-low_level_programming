@@ -2,7 +2,7 @@
 /**
  * string_toupper(char *s) -  Entry function
  * @str: pointer to char
- * Return: 0
+ * Return: char
  */
 char *string_toupper(char *str)
 {
