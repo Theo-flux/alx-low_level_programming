@@ -4,7 +4,7 @@
  * @dest: pointer to char dest
  * @src: pointer to char src
  * @n: number of src to copy to dest
- * Return dest
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
