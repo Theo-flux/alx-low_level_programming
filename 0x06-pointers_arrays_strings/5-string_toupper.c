@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * string_toupper(char *s) -  Entry function
+ * string_toupper -  Entry function
  * @str: pointer to char
  * Return: char
  */
