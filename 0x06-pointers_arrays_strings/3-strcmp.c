@@ -18,11 +18,11 @@ return (0);
 }
 if (ascii_s1 > ascii_s2)
 {
-return (15);
+return (ascii_s1 - ascii_s2);
 }
 if (ascii_s1 < ascii_s2)
 {
-return (-15);
+return (ascii_s1 - ascii_s2);
 }
 }
 }
