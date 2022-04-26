@@ -9,13 +9,18 @@
  */
 char *_strchr(char *s, char c)
 {
-while (*s != '\0')
+unsigned int i;
+for (i = 0; i < strlen(s) && s[i] != '\0'; i++)
 {
 	if (*s == c)
 	{
 		return (s);
 	}
 	s++;
+}
+if (*s == c)
+{
+	return (s);
 }
 return (0);
 }
