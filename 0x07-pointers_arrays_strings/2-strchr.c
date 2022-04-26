@@ -9,8 +9,7 @@
  */
 char *_strchr(char *s, char c)
 {
-unsigned int i;
-for (i = 0; i < strlen(s) && s[i] != '\0'; i++)
+while (*s != '\0')
 {
 	if (*s == c)
 	{
