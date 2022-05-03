@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
  * main - Entry function
+ * @argc: offset count
+ * @argv: offset valuei
  * Return 0
  */
 int main(int argc, char*argv[])
