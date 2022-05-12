@@ -6,7 +6,7 @@ i#include <stdio.h>
  * @ame: pointer to char
  * @age: float variable
  * @owner: pointer to char
- * Return: No
+ * Return: initialise struct dog
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
