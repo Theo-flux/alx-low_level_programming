@@ -6,11 +6,17 @@
  */
 char *string_toupper(char *str)
 {
-int i;
-for (i = 0; str[i] != '\0'; i++)
-{
-if (str[i] <= 'z' && str[i] >= 'a')
-str[i] -= 32;
-}
-return (str);
+    int ascii_str, i;
+
+    while (str[i] != '\0')
+    {
+        ascii_str = (int)str[i];
+        if (ascii_str > 96 && ascii_str < 123)
+        {
+            ascii_str -= 32;
+            str[i] = (char)ascii_str;
+        }
+        i++;
+    }
+    return (str);
 }
