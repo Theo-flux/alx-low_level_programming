@@ -10,20 +10,33 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int c = 0;
-	char *t = accept;
+    unsigned int i, j;
+    unsigned int counter = 0;
+    unsigned int acceptLen = strlen(accept);
+    unsigned int sLen = strlen(s);
 
-	while (*s++)
-	{
-		while (*accept++)
-			if (*(s - 1) == *(accept - 1))
-			{
-				c++;
-				break;
-			}
-		if (!(*--accept))
-			break;
-		accept = t;
-	}
-	return (c);
+    for (i = 0; i < sLen; i++)
+    {
+        bool found_match = false;
+
+        for (j = 0; j < acceptLen; j++)
+        {
+            if (accept[j] == s[i])
+            {
+                found_match = true;
+                break;
+            }
+        }
+
+        if (found_match == true)
+        {
+            counter++;
+        }
+        else
+        {
+            break;
+        }
+    }
+
+    return counter;
 }
