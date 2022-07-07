@@ -1,10 +1,11 @@
-#ifndef DOUBLY_LINKED_LISTS
-#define DOUBLY_LINKED_LISTS
+#ifndef DOUBLY_LINKED_LISTS_HEADER
+#define DOUBLY_LINKED_LISTS_HEADER
 
 /**
- * File
- * Auth - Ekunnusi Theophilus
+ * File: lists.h
+ * Auth: Ekunnusi Theophilus
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
@@ -30,4 +31,4 @@ size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 
-#endif
+#endif /*DOUBLY_LINKED_LISTS_HEADER*/
