@@ -1,6 +1,12 @@
 #ifndef DOUBLY_LINKED_LISTS
 #define DOUBLY_LINKED_LISTS
 
+/**
+ * File
+ * Auth - Ekunnusi Theophilus
+ */
+#include <stdio.h>
+#include <stdlib.h>
 #include <stddef.h>
 
 /**
