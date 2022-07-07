@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stddef.h>
-
 /*
  * dlistint_len - Function taht returns the number of elements in a linked dlistint_t list.
  * @h: pointer to head
