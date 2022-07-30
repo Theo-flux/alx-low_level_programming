@@ -29,10 +29,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
     node = ht->array[index];
 
-    while (node && strcmp(node->key, key) != NULL)
+    while (node && strcmp(node->key, key) != 0)
     {
         node = node->next;
     }
 
-    return node == NULL ? node->value : NULL;
+    return node == NULL ? NULL : node->value;
 }
