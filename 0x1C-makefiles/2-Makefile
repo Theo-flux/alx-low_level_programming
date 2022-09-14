@@ -11,9 +11,9 @@
 # You are not allowed to have a list of all the .o files
 
 CC=gcc
-SRC=main.c holberton.c
+SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
-NAME=holberton
+NAME=school
 
 all: $(OBJ)   
 	$(CC) $(OBJ) -o $(NAME)
