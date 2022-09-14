@@ -4,7 +4,10 @@
 		# all: The all rule builds your executable
 		# variable: none
 
+CC := gcc
+SRC := $(wildcard *.c)
+
 all: school
 
 school:
-		gcc main.c school.c -o school
+		${CC} ${SRC} -o school
