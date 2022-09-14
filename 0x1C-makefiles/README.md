@@ -2,7 +2,7 @@
 makefiles are files used to automate set of tasks to be executed. it makes use of the make utility.
 
 # Resources
-[makefile][https://opensource.com/article/18/8/what-how-makefile]
+[makefile](https://opensource.com/article/18/8/what-how-makefile)
 
 # General
 - What are make, makefiles.
