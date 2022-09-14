@@ -1,14 +1,11 @@
 # Requirements
-
 # name of the executable: school
-
 # rules:
 		# all: The all rule builds your executable
 		# clean: deletes all Emacs and Vim temp files along with exec files
 		# oclean: deletes the object files
 		# fclean: deletes all Emacs and Vim temp files, exec, obj files
 		# re: forces recompilation of all source files
-
 # variable:
 		# CC: the compiler to be used.
 		# SRC: the .c files
@@ -19,8 +16,8 @@
 # You are not allowed to have a list of all the .o files
 
 CC:=-gcc
-SRC:=$(wildcard *.c)
-OBJ:=$(wildcard *.o)
+SRC:= main.c school.c
+OBJ:=$(SRC: %.c= %.o)
 NAME:=school
 RM:=-rm -f
 
